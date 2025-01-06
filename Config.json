@@ -1,0 +1,36 @@
+{  
+   "virtualService":{  
+      "version":"1",
+       "name": "Broadcom-Cars-Demo-001",
+       "description": "Invoke API V3",
+       "status": "",     
+       "capacity": 1,
+       "thinkScale": 100,
+       "autoRestart": true,
+       "startOnDeploy": true,
+   },
+   "transportProtocol":{  
+      "typeId":"HTTP",
+      "basePath":"/",
+      "useGateway":true,
+      "hostHeaderPassThrough":false,
+	  "targetEndpoint":{ 
+        "useSSL":false,
+        "host":"localhost",
+        "port":"7000",
+        "learnSuccessResponseOnly":true
+      },
+      "recordingEndpoint":{  
+         "useSSL":false,
+         "host":"localhost",
+         "port":"61534"
+	  }
+	},
+            
+  "dataProtocols": [
+    {
+      "forRequest": true,
+      "typeId": "RESTDPH"
+    }
+  ]
+}
