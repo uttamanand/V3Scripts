@@ -4,7 +4,7 @@ using namespace System.Net.Http
 $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("admin:admin")))
 
 # Define URI and headers
-$uri = "http://api.devtest.apps.devtest.svc.cluster.local/lisa-virtualize-invoke/api/v3/vses/VSE/services"
+$uri = "https://api.devtest.apps.devtest.svc.cluster.local/lisa-virtualize-invoke/api/v3/vses/VSE/services"
 $headers = @{
     "accept" = "application/json"
     "Authorization" = "Basic $base64AuthInfo"
