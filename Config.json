@@ -17,7 +17,7 @@
 	  "targetEndpoint":{ 
         "useSSL":false,
         "host":"localhost",
-        "port":"26968",
+        "port":"17248",
         "learnSuccessResponseOnly":true
       },
       "recordingEndpoint":{  
