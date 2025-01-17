@@ -23,7 +23,7 @@
       "recordingEndpoint":{  
          "useSSL":false,
          "host":"localhost",
-         "port":"11935"
+         "port":"11936"
 	  }
 	},
             
